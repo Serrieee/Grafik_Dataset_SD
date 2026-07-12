@@ -6,7 +6,7 @@ from utils import muat_dan_siapkan_data
 def main():
     print("Data Gacha Revenue......")
    
-    # Pastikan file CSV ada di dalam folder 'dataset'
+    # Pastikan file CSV ada di dalam folder 'Dataset'
     df_game, kolom_bulan = muat_dan_siapkan_data('Dataset/tsukiyo_gacha_revenue.csv')
 
     # Perhitungan Statistik Deskriptif seperti sorting dan lain lain
@@ -37,15 +37,15 @@ def main():
 
     print("File 'hasil_analisis.txt' berhasil dibuat!")
 
-    # 4. Membuat 2 Visualisasi Grafik dalam 1 Gambar (Subplots)
+    # Membuat 2 Visualisasi Grafik dalam 1 Gambar (Subplots)
     fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(12, 12))
 
-    # --- GRAFIK ATAS: Bar Plot (Total Pendapatan) ---
+    # GRAFIK ATAS: Bar Plot (Total Pendapatan) ---
     axes[0].bar(df_game['game'], df_game['total_pendapatan'] / 1e6, color='#2ecc71', edgecolor='black')
     axes[0].set_title('Top 12 Mobile Gacha Game Revenue (Januari - Juni 2026)', fontsize=14, fontweight='bold')
     axes[0].set_ylabel('Total Pendapatan (Juta USD)', fontsize=12)
 
-    # PERBAIKAN 1: Miringkan 45 derajat dan jangkar teks di sebelah kanan (ha='right')
+    # 45 derajat dan jangkar teks di sebelah kanan (ha='right')
     axes[0].set_xticks(range(len(df_game['game'])))
     axes[0].set_xticklabels(df_game['game'], rotation=45, ha='right')
 
@@ -63,7 +63,7 @@ def main():
     axes[1].grid(True, linestyle='--', alpha=0.5)
     axes[1].legend(bbox_to_anchor=(1.02, 1), loc='upper left', fontsize=9)
 
-    # PERBAIKAN 2: Tambahkan h_pad (Horizontal Padding) agar jarak atas-bawah renggang
+    # jarak atas-bawah renggang
     plt.tight_layout(h_pad=3.0)
 
     # Simpan Grafik ke PNG
