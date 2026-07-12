@@ -42,7 +42,7 @@ def main():
 
     # --- GRAFIK ATAS: Bar Plot (Total Pendapatan) ---
     axes[0].bar(df_game['game'], df_game['total_pendapatan'] / 1e6, color='#2ecc71', edgecolor='black')
-    axes[0].set_title('Top 10 Mobile Gacha Game Revenue (Januari - Juni 2026)', fontsize=14, fontweight='bold')
+    axes[0].set_title('Top 12 Mobile Gacha Game Revenue (Januari - Juni 2026)', fontsize=14, fontweight='bold')
     axes[0].set_ylabel('Total Pendapatan (Juta USD)', fontsize=12)
 
     # PERBAIKAN 1: Miringkan 45 derajat dan jangkar teks di sebelah kanan (ha='right')
