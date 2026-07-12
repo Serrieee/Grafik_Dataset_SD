@@ -45,7 +45,7 @@ def main():
     axes[0].set_title('Top 12 Mobile Gacha Game Revenue (Januari - Juni 2026)', fontsize=14, fontweight='bold')
     axes[0].set_ylabel('Total Pendapatan (Juta USD)', fontsize=12)
 
-    # 45 derajat dan jangkar teks di sebelah kanan (ha='right')
+    # 45 derajat dan teks di sebelah kanan (ha='right')
     axes[0].set_xticks(range(len(df_game['game'])))
     axes[0].set_xticklabels(df_game['game'], rotation=45, ha='right')
 

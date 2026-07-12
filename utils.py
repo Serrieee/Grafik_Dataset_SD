@@ -2,6 +2,7 @@
 import pandas as pd
 import re
 
+# Fungsi untuk memuat data dari file CSV dan menyiapkan DataFrame
 def muat_dan_siapkan_data(filepath):
     df = pd.read_csv(filepath)
     
