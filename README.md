@@ -6,6 +6,7 @@
 
 # 1. Informasi Mahasiswa
 Judul Project : Analisis tren pendapatan Mobile Gacha Game 2026
+
 Nama          : Rafa Adib
 NIM           : 25.11.6484
 
